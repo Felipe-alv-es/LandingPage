@@ -1,13 +1,18 @@
-import { Typography } from "@mui/material";
 import React from "react";
+import { Box, Typography } from "@mui/material";
 
 const Home = () => {
   return (
-    <div>
-      <Typography variant="h1" fontFamily={"kanit"} fontWeight={"500"}>
+    <Box sx={{ paddingTop: "70px", background: "black" }}>
+      <Typography
+        variant="h2"
+        fontFamily={"kanit"}
+        fontWeight={"500"}
+        color={"white"}
+      >
         Home
       </Typography>
-    </div>
+    </Box>
   );
 };
 
