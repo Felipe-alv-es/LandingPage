@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Button } from "@mui/material";
 import logo from "../../assets/images/FelitLogo.png";
+import { HiMiniChevronDown } from "react-icons/hi2";
 
 const Navbar = () => {
   return (
@@ -9,15 +10,16 @@ const Navbar = () => {
         display: "flex",
         justifyContent: "center",
         background: "black",
-        height: "7%",
+        height: "64px",
         width: "100%",
         position: "fixed",
         boxShadow: "1px 1px 1px  #555555",
+        zIndex: 2,
       }}
     >
       <Box
         sx={{
-          height: "7%",
+          height: "64px",
           display: "flex",
           position: "fixed",
           width: "70%",
@@ -42,22 +44,45 @@ const Navbar = () => {
               "> ul": {
                 listStyle: "none",
                 display: "flex",
-                "> li": {
-                  fontSize: "18px",
-                  fontFamily: "kanit",
-                  marginRight: "16px",
-                  fontWeight: "300",
-                  color: "#FFFFF7",
+                "> div": {
+                  display: "flex",
+                  alignItems: "center",
+                  marginRight: "20px",
+                  "> li": {
+                    fontSize: "16px",
+                    fontFamily: "kanit",
+                    marginRight: "4px",
+                    fontWeight: "300",
+                    color: "#FFFFF7",
+                  },
+                  "> svg": {
+                    color: "#FFFFF7",
+                  },
                 },
               },
             }}
           >
             <ul>
-              <li>Produto</li>
-              <li>Solução</li>
-              <li>Recursos</li>
-              <li>Empresa</li>
-              <li>Preço</li>
+              <Box>
+                <li>Produto</li>
+                <HiMiniChevronDown />
+              </Box>
+              <Box>
+                <li>Solução</li>
+                <HiMiniChevronDown />
+              </Box>
+              <Box>
+                <li>Recursos</li>
+                <HiMiniChevronDown />
+              </Box>
+              <Box>
+                <li>Empresa</li>
+                <HiMiniChevronDown />
+              </Box>
+              <Box>
+                <li>Preço</li>
+                <HiMiniChevronDown />
+              </Box>
             </ul>
           </Box>
         </Box>
@@ -71,9 +96,9 @@ const Navbar = () => {
                 listStyle: "none",
                 display: "flex",
                 "> li": {
-                  fontSize: "18px",
+                  fontSize: "16px",
                   fontFamily: "kanit",
-                  marginRight: "16px",
+                  marginRight: "20px",
                   fontWeight: "300",
                   color: "#FFFFF7",
                 },
@@ -85,7 +110,10 @@ const Navbar = () => {
               <li>Compre Conosco</li>
             </ul>
           </Box>
-          <Button variant="contained" sx={{ margin: "8px 4px 8px 4px" }}>
+          <Button
+            variant="contained"
+            sx={{ margin: "8px 4px 8px 4px", textTransform: "none" }}
+          >
             Comece agora - É grátis
           </Button>
         </Box>
