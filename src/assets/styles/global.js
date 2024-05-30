@@ -10,7 +10,7 @@ export default createGlobalStyle`
 
     body {
         font-size: 16px;
-        background: linear-gradient(to right, #e7e7e7, #e7e7e7);
+        background: #F6F6EF;
         color: #383838;
     }
 
