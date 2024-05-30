@@ -111,6 +111,10 @@ export const StyledImage = React.forwardRef<HTMLDivElement, AboutProps>(
             transition: "1s",
             backgroundSize: "cover",
             borderRadius: "16px",
+            opacity:
+              scrollValue && (scrollValue < 980 || scrollValue > 5600)
+                ? 0
+                : 100,
           }}
         >
           <Box

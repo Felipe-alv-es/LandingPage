@@ -16,6 +16,8 @@ const About = () => {
     setScrollValue(value);
   });
 
+  console.log(scrollValue);
+
   return (
     <Box sx={getContainerStyle}>
       <Box>
