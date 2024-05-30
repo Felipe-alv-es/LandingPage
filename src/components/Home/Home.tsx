@@ -136,7 +136,7 @@ const Home = () => {
           color={"white"}
           sx={{
             whiteSpace: "pre-wrap",
-            marginTop: "48px",
+            marginTop: "72px",
           }}
         >
           {"Confiado por importantes agencias do mundo"}
