@@ -3,13 +3,10 @@ import { Box, Button, Typography } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { homeOptions } from "../../assets/utils/homeOptions.tsx";
 import { homeAgencies } from "../../assets/utils/homeAgencies.tsx";
-import { EffectCoverflow, FreeMode, Pagination } from "swiper/modules";
+import { EffectCoverflow, Pagination } from "swiper/modules";
 
 const Home = () => {
   const params = {
-    // autoplay: {
-    //   delay: 5000,
-    // },
     effect: "coverflow",
     slidesPerView: 3,
     coverflowEffect: {
