@@ -1,6 +1,7 @@
 export interface AboutProps {
-  title: string;
+  title?: string;
   text?: string;
   srcImage?: string;
   altImage?: string;
+  scrollValue?: number;
 }

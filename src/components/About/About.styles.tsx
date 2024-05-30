@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import { AboutProps } from "./About.types";
+import { AboutOptions } from "../../assets/utils/AboutTextAreaContent.tsx";
 
 export const getContainerStyle = () => ({
   justifyContent: "center",
@@ -8,22 +9,6 @@ export const getContainerStyle = () => ({
   "> div": {
     padding: "10%",
     width: "85%",
-  },
-});
-
-export const getImageBoxStyle = () => ({
-  position: "sticky",
-  top: 300,
-  width: "100%",
-  paddingTop: "0%",
-  display: "flex",
-  "> img": {
-    width: "50%",
-    borderRadius: "16px",
-    // transition: "10s",
-  },
-  "> img:nth-of-type(1)": {
-    opacity: 0,
   },
 });
 
@@ -55,6 +40,7 @@ export const StyledTextArea = React.forwardRef<HTMLDivElement, AboutProps>(
         sx={{
           width: "50%",
           marginBottom: "50%",
+          paddingRight: "48px",
         }}
         {...props}
       >
@@ -76,6 +62,69 @@ export const StyledTextArea = React.forwardRef<HTMLDivElement, AboutProps>(
         >
           {text}
         </Typography>
+      </Box>
+    );
+  }
+);
+
+export const StyledImage = React.forwardRef<HTMLDivElement, AboutProps>(
+  ({ scrollValue, ...props }, ref) => {
+    const setImageValue = (scrollValue) => {
+      if (scrollValue < 2300) {
+        return AboutOptions[0].imageSrc;
+      }
+      if (scrollValue >= 2300 && scrollValue < 3200) {
+        return AboutOptions[1].imageSrc;
+      }
+      if (scrollValue >= 3200 && scrollValue < 4100) {
+        return AboutOptions[2].imageSrc;
+      }
+      if (scrollValue >= 4100) {
+        return AboutOptions[3].imageSrc;
+      }
+    };
+
+    return (
+      <Box
+        sx={{
+          position: "sticky",
+          top: 300,
+          width: "100%",
+          paddingTop: "0%",
+          display: "flex",
+        }}
+        {...props}
+      >
+        <Box
+          component="img"
+          src={setImageValue(scrollValue)}
+          alt={"Images have opacity 0"}
+          sx={{
+            width: "50%",
+            borderRadius: "16px",
+            opacity: 0,
+          }}
+        />
+        <Box
+          sx={{
+            backgroundImage: `url(${setImageValue(scrollValue)})`,
+            transition: "1s",
+            backgroundSize: "cover",
+            borderRadius: "16px",
+          }}
+        >
+          <Box
+            component="img"
+            src={setImageValue(scrollValue)}
+            alt={"Images have opacity 0"}
+            sx={{
+              width: "100%",
+              borderRadius: "16px",
+              transition: "1s",
+              opacity: 0,
+            }}
+          />
+        </Box>
       </Box>
     );
   }

@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { Box, Typography } from "@mui/material";
 import {
   StyledTextArea,
-  getImageBoxStyle,
   getTitlePageStyle,
   getContainerStyle,
+  StyledImage,
 } from "./About.styles.tsx";
 import { AboutOptions } from "../../assets/utils/AboutTextAreaContent.tsx";
 
@@ -15,21 +15,6 @@ const About = () => {
     const value = window.scrollY;
     setScrollValue(value);
   });
-
-  const setImageValue = () => {
-    if (scrollValue >= 2300 && scrollValue < 3300) {
-      return AboutOptions[1].imageSrc;
-    }
-    if (scrollValue >= 3300 && scrollValue < 4300) {
-      return AboutOptions[2].imageSrc;
-    }
-    if (scrollValue >= 4300) {
-      return AboutOptions[3].imageSrc;
-    }
-    if (scrollValue < 2300) {
-      return AboutOptions[0].imageSrc;
-    }
-  };
 
   return (
     <Box sx={getContainerStyle}>
@@ -45,10 +30,7 @@ const About = () => {
             pariatur.
           </Typography>
         </Box>
-        <Box sx={getImageBoxStyle}>
-          <Box component="img" src={""} alt={"Alt teste"} />
-          <Box component="img" src={setImageValue()} alt={"Alt teste"} />
-        </Box>
+        <StyledImage scrollValue={scrollValue} />
         {AboutOptions.map((item) => (
           <StyledTextArea title={item.title} text={item.text} />
         ))}
