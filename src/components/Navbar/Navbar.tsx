@@ -2,30 +2,19 @@ import React from "react";
 import { Box, Button } from "@mui/material";
 import logo from "../../assets/images/FelitLogo.png";
 import { HiMiniChevronDown } from "react-icons/hi2";
+import {
+  getContainerStyle,
+  getMenuStyle,
+  getSecondMenuStyle,
+  getButtonStyle,
+} from "./Navbar.styles.ts";
 
 const Navbar = () => {
+  const menuItems = ["Produto", "Solução", "Recursos", "Empresa", "Preço"];
+
   return (
-    <Box
-      sx={{
-        display: "flex",
-        justifyContent: "center",
-        background: "black",
-        height: "64px",
-        width: "100%",
-        position: "fixed",
-        boxShadow: "1px 1px 1px  #555555",
-        zIndex: 2,
-      }}
-    >
-      <Box
-        sx={{
-          height: "64px",
-          display: "flex",
-          position: "fixed",
-          width: "70%",
-          justifyContent: "space-between",
-        }}
-      >
+    <Box sx={getContainerStyle}>
+      <Box>
         <Box
           sx={{
             display: "flex",
@@ -37,83 +26,25 @@ const Navbar = () => {
             alt="Enterprise Logo Image"
             sx={{ marginRight: "16px" }}
           />
-          <Box
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              "> ul": {
-                listStyle: "none",
-                display: "flex",
-                "> div": {
-                  display: "flex",
-                  alignItems: "center",
-                  marginRight: "20px",
-                  "> li": {
-                    fontSize: "16px",
-                    fontFamily: "kanit",
-                    marginRight: "4px",
-                    fontWeight: "300",
-                    color: "#FFFFF7",
-                  },
-                  "> svg": {
-                    color: "#FFFFF7",
-                  },
-                },
-              },
-            }}
-          >
+          <Box sx={getMenuStyle}>
             <ul>
-              <Box>
-                <li>Produto</li>
-                <HiMiniChevronDown />
-              </Box>
-              <Box>
-                <li>Solução</li>
-                <HiMiniChevronDown />
-              </Box>
-              <Box>
-                <li>Recursos</li>
-                <HiMiniChevronDown />
-              </Box>
-              <Box>
-                <li>Empresa</li>
-                <HiMiniChevronDown />
-              </Box>
-              <Box>
-                <li>Preço</li>
-                <HiMiniChevronDown />
-              </Box>
+              {menuItems.map((item) => (
+                <Box>
+                  <li>{item}</li>
+                  <HiMiniChevronDown />
+                </Box>
+              ))}
             </ul>
           </Box>
         </Box>
         <Box sx={{ display: "flex" }}>
-          <Box
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              height: "100%",
-              "> ul": {
-                listStyle: "none",
-                display: "flex",
-                "> li": {
-                  fontSize: "16px",
-                  fontFamily: "kanit",
-                  marginRight: "20px",
-                  fontWeight: "300",
-                  color: "#FFFFF7",
-                },
-              },
-            }}
-          >
+          <Box sx={getSecondMenuStyle}>
             <ul>
               <li>Login</li>
               <li>Compre Conosco</li>
             </ul>
           </Box>
-          <Button
-            variant="contained"
-            sx={{ margin: "8px 4px 8px 4px", textTransform: "none" }}
-          >
+          <Button variant="contained" sx={getButtonStyle}>
             Comece agora - É grátis
           </Button>
         </Box>
