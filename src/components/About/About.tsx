@@ -16,11 +16,9 @@ const About = () => {
     setScrollValue(value);
   });
 
-  console.log(scrollValue);
-
   return (
     <Box sx={getContainerStyle}>
-      <Box>
+      <Box sx={{ "div:nth-of-type(6)": { marginBottom: "0%" } }}>
         <Box sx={getTitlePageStyle}>
           <Typography>{"Desenvolva seus produtos rapidamente"}</Typography>
           <Typography>
