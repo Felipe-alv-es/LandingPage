@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Button } from "@mui/material";
+//@ts-ignore
 import logo from "../../assets/images/FelitLogo.png";
 import { HiMiniChevronDown } from "react-icons/hi2";
 import {
