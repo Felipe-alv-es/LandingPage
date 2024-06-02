@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar.tsx";
 import About from "./components/About/About.tsx";
 import Benefits from "./components/Benefits/Benefits.tsx";
 import Plans from "./components/Plans/Plans.tsx";
+import Footer from "./components/Footer/Footer.js";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <About />
       <Benefits />
       <Plans />
+      <Footer />
     </div>
   );
 }
