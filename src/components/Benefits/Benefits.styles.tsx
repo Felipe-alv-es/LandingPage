@@ -5,6 +5,7 @@ import { Box, Typography } from "@mui/material";
 export const getContainerStyle = () => ({
   justifyContent: "center",
   display: "flex",
+  marginBottom: "32px",
   "> div": {
     width: "70%",
   },
