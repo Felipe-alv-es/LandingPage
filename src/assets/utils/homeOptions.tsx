@@ -8,37 +8,37 @@ import home07 from "../images/HomeImages/HomeImage07.jpg";
 
 export const homeOptions = [
   {
-    title: "Técnica das 12 Horas",
+    title: "Design Gráfico Fundamentos",
     imageSrc: home01,
     imageAlt: "Homepage of TwelveHours Site",
   },
   {
-    title: "Alma Design System",
+    title: "Desenvolvimento Web Front-End Avançado",
     imageSrc: home02,
     imageAlt: "Logo do Alma DS",
   },
   {
-    title: "Fictional Mobile",
+    title: "Design Digital: Técnicas e Práticas",
     imageSrc: home03,
     imageAlt: "Home page from cellphone Store Site",
   },
   {
-    title: "Fictional Mobile",
+    title: "UX/UI Design: Criando Experiências Memoráveis",
     imageSrc: home04,
     imageAlt: "Home page from cellphone Store Site",
   },
   {
-    title: "Fictional Mobile",
+    title: "Programação Python: Do Básico ao Avançado",
     imageSrc: home05,
     imageAlt: "Home page from cellphone Store Site",
   },
   {
-    title: "Fictional Mobile",
+    title: "Edição de Vídeo Profissional com Adobe Premier",
     imageSrc: home06,
     imageAlt: "Home page from cellphone Store Site",
   },
   {
-    title: "Fictional Mobile",
+    title: "Marketing Digital Estratégico para Negócios Online",
     imageSrc: home07,
     imageAlt: "Home page from cellphone Store Site",
   },

@@ -15,7 +15,7 @@ import {
 const Home = () => {
   const params = {
     effect: "coverflow",
-    centeredSlides: "true",
+    centeredSlides: true,
     loop: true,
     slidesPerView: 3,
     coverflowEffect: {
@@ -65,6 +65,17 @@ const Home = () => {
                   borderRadius: "16px",
                 }}
               />
+              <Typography
+                sx={{
+                  marginTop: "16px",
+                  typography: "h5",
+                  fontFamily: "kanit",
+                  fontWeight: "600",
+                  color: "white",
+                }}
+              >
+                {item.title}
+              </Typography>
             </SwiperSlide>
           ))}
         </Swiper>
