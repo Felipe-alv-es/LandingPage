@@ -16,7 +16,7 @@ const Benefits = () => {
           {"Descubra os Benefícios dos \nNossos Cursos Online"}
         </Typography>
         <Button variant="contained" sx={getButtonStyle}>
-          Comece agora - É grátis
+          Comece agora
         </Button>
         <Box sx={{ display: "flex" }}>
           <StyledTextArea
