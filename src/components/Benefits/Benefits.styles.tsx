@@ -30,7 +30,11 @@ export const StyledTextArea = React.forwardRef<HTMLDivElement, BenefitsProps>(
   ({ title, text, icon: Icon, ...props }, ref) => {
     return (
       <Box
-        sx={{ padding: "16px", "> svg": { height: "72px", width: "72px" } }}
+        sx={{
+          padding: "16px",
+          width: "33%",
+          "> svg": { height: "72px", width: "72px" },
+        }}
         {...props}
       >
         {Icon}
