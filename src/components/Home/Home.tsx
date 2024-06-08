@@ -3,7 +3,7 @@ import { Box, Button, Typography } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { homeOptions } from "../../assets/utils/homeOptions.tsx";
 import { homeAgencies } from "../../assets/utils/homeAgencies.tsx";
-import { EffectCoverflow, Pagination } from "swiper/modules";
+import { EffectCoverflow } from "swiper/modules";
 import {
   getContainerStyle,
   getTitleStyle,
@@ -23,8 +23,7 @@ const Home = () => {
       modifier: 1,
       slideShadows: true,
     },
-    pagination: true,
-    modules: [EffectCoverflow, Pagination],
+    modules: [EffectCoverflow],
     className: "mySwiper",
   };
 
@@ -42,18 +41,15 @@ const Home = () => {
       <Box>
         <BackgroundStyled />
         <Typography sx={getTitleStyle}>
-          {"Crie, divulgue e Gerencie \n seus serviços aqui "}
+          {"Domine novas habilidades, transforme seu futuro"}
         </Typography>
         <Typography sx={getSubtitleStyle()}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur.
+          {
+            "Nossos cursos online em design, programação e fotografia são criados para ajudar você a se destacar no mercado. Aprenda com profissionais experientes, adquira conhecimentos práticos e acelere sua carreira com confiança e criatividade"
+          }
         </Typography>
         <Button variant="contained" sx={getButtonStyle}>
-          Comece a divulgar
+          Comece agora
         </Button>
         <Swiper {...params}>
           {homeOptions.map((item) => (
@@ -71,7 +67,7 @@ const Home = () => {
           ))}
         </Swiper>
         <Typography sx={getSubtitleStyle(true)}>
-          {"Confiado por importantes agencias do mundo"}
+          {"Aprenda todas as tecnologias do mercado e destaque-se!"}
         </Typography>
         <Swiper {...params2}>
           {homeAgencies.map((item) => (

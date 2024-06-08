@@ -16,18 +16,19 @@ const About = () => {
     setScrollValue(value);
   });
 
+  console.log(scrollValue);
+
   return (
     <Box sx={getContainerStyle}>
       <Box sx={{ "div:nth-of-type(6)": { marginBottom: "0%" } }}>
         <Box sx={getTitlePageStyle}>
-          <Typography>{"Desenvolva seus produtos rapidamente"}</Typography>
+          <Typography>{"Comece a aprender conosco"}</Typography>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.
+            Descubra os benefícios exclusivos de nossos cursos online em design
+            e programação. Com uma abordagem prática e conteúdos atualizados,
+            garantimos uma experiência de aprendizado completa que vai além do
+            básico. Confira como você pode transformar sua carreira com nossas
+            soluções educacionais inovadoras:
           </Typography>
         </Box>
         <StyledImage scrollValue={scrollValue} />

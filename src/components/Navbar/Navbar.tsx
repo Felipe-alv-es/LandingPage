@@ -11,7 +11,13 @@ import {
 } from "./Navbar.styles.ts";
 
 const Navbar = () => {
-  const menuItems = ["Produto", "Solução", "Recursos", "Empresa", "Preço"];
+  const menuItems = [
+    "Programação",
+    "Design",
+    "Sobre Nós",
+    "Eventos",
+    "Depoimentos",
+  ];
 
   return (
     <Box sx={getContainerStyle}>
@@ -42,11 +48,11 @@ const Navbar = () => {
           <Box sx={getSecondMenuStyle}>
             <ul>
               <li>Login</li>
-              <li>Compre Conosco</li>
+              <li>Veja nossos planos</li>
             </ul>
           </Box>
           <Button variant="contained" sx={getButtonStyle}>
-            Comece agora - É grátis
+            Comece agora
           </Button>
         </Box>
       </Box>
