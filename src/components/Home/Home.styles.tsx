@@ -27,7 +27,7 @@ export const getTitleStyle = () => ({
 
 export const getSubtitleStyle = (mt?: boolean) => ({
   whiteSpace: "pre-wrap",
-  marginBottom: "16px",
+  marginBottom: "32px",
   typography: "h6",
   fontFamily: "kanit",
   fontWeight: "300",

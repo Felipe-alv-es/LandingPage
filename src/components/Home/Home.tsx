@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button, Icon, Typography } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { homeOptions } from "../../assets/utils/homeOptions.tsx";
 import { homeAgencies } from "../../assets/utils/homeAgencies.tsx";
@@ -15,6 +15,8 @@ import {
 const Home = () => {
   const params = {
     effect: "coverflow",
+    centeredSlides: "true",
+    loop: true,
     slidesPerView: 3,
     coverflowEffect: {
       rotate: 50,
@@ -72,16 +74,15 @@ const Home = () => {
         <Swiper {...params2}>
           {homeAgencies.map((item) => (
             <SwiperSlide key={item.title}>
-              <Box
-                component="img"
-                src={item.imageSrc}
-                alt={item.imageAlt}
+              <Icon
                 sx={{
-                  width: "100%",
-                  borderRadius: "16px",
-                  padding: "16px",
+                  width: "50px",
+                  height: "50px",
+                  "> svg": { width: "50px", height: "50px" },
                 }}
-              />
+              >
+                {item.imageSrc}
+              </Icon>
             </SwiperSlide>
           ))}
         </Swiper>
