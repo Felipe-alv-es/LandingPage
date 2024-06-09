@@ -8,7 +8,13 @@ export const getContainerStyle = () => ({
   display: "flex",
   "> div": {
     padding: "10%",
-    width: "85%",
+    width: "70%",
+    "@media(max-width: 1920px)": {
+      padding: "10% 5% 10% 5%",
+    },
+    "@media(max-width: 1440px)": {
+      width: "80%",
+    },
   },
 });
 

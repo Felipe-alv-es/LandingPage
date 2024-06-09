@@ -7,6 +7,7 @@ export const getContainerStyle = () => ({
   display: "flex",
   marginBottom: "32px",
   "> div": {
+    // background: "coral",
     width: "70%",
   },
 });

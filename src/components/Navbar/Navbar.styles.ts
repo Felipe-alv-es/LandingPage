@@ -13,6 +13,9 @@ export const getContainerStyle = () => ({
     position: "fixed",
     width: "70%",
     justifyContent: "space-between",
+    "@media(max-width: 1440px)": {
+      width: "80%",
+    },
   },
 });
 

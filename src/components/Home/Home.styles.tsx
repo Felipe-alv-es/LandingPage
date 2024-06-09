@@ -13,6 +13,10 @@ export const getContainerStyle = () => ({
     textAlign: "center",
     padding: "10% 10% 2% 10%",
     position: "relative",
+    "@media(max-width: 1440px)": {
+      width: "80%",
+      padding: "10% 5% 2% 5%",
+    },
   },
   "> * .swiper-button-next": { marginTop: "-56px" },
   "> * .swiper-button-prev": { marginTop: "-56px" },
