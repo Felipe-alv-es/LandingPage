@@ -18,6 +18,7 @@ const Home = () => {
     centeredSlides: true,
     loop: true,
     slidesPerView: 3,
+    navigation: true,
     coverflowEffect: {
       rotate: 50,
       stretch: 0,

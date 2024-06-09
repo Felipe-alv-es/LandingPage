@@ -14,6 +14,8 @@ export const getContainerStyle = () => ({
     padding: "10% 10% 2% 10%",
     position: "relative",
   },
+  "> * .swiper-button-next": { marginTop: "-56px" },
+  "> * .swiper-button-prev": { marginTop: "-56px" },
 });
 
 export const getTitleStyle = () => ({
