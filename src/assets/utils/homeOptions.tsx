@@ -1,46 +1,45 @@
-import Logo from "../../assets/images/FelitLogo.png";
+import home01 from "../images/HomeImages/HomeImage01.jpg";
+import home02 from "../images/HomeImages/HomeImage02.jpg";
+import home03 from "../images/HomeImages/HomeImage03.jpg";
+import home04 from "../images/HomeImages/HomeImage04.jpg";
+import home05 from "../images/HomeImages/HomeImage05.jpg";
+import home06 from "../images/HomeImages/HomeImage06.jpg";
+import home07 from "../images/HomeImages/HomeImage07.jpg";
 
 export const homeOptions = [
   {
-    title: "Técnica das 12 Horas",
-    imageSrc:
-      "https://pbs.twimg.com/media/Fp2SmeuXsAEJJTY?format=jpg&name=large",
+    title: "Design Gráfico Fundamentos",
+    imageSrc: home01,
     imageAlt: "Homepage of TwelveHours Site",
   },
   {
-    title: "Alma Design System",
-    imageSrc:
-      "https://pbs.twimg.com/media/Fp2SmeuXsAEJJTY?format=jpg&name=large",
+    title: "Desenvolvimento Web Front-End Avançado",
+    imageSrc: home02,
     imageAlt: "Logo do Alma DS",
   },
   {
-    title: "Fictional Mobile",
-    imageSrc:
-      "https://pbs.twimg.com/media/Fp2SmeuXsAEJJTY?format=jpg&name=large",
+    title: "Design Digital: Técnicas e Práticas",
+    imageSrc: home03,
     imageAlt: "Home page from cellphone Store Site",
   },
   {
-    title: "Fictional Mobile",
-    imageSrc:
-      "https://pbs.twimg.com/media/Fp2SmeuXsAEJJTY?format=jpg&name=large",
+    title: "UX/UI Design: Criando Experiências Memoráveis",
+    imageSrc: home04,
     imageAlt: "Home page from cellphone Store Site",
   },
   {
-    title: "Fictional Mobile",
-    imageSrc:
-      "https://pbs.twimg.com/media/Fp2SmeuXsAEJJTY?format=jpg&name=large",
+    title: "Programação Python: Do Básico ao Avançado",
+    imageSrc: home05,
     imageAlt: "Home page from cellphone Store Site",
   },
   {
-    title: "Fictional Mobile",
-    imageSrc:
-      "https://pbs.twimg.com/media/Fp2SmeuXsAEJJTY?format=jpg&name=large",
+    title: "Edição de Vídeo Profissional com Adobe Premier",
+    imageSrc: home06,
     imageAlt: "Home page from cellphone Store Site",
   },
   {
-    title: "Fictional Mobile",
-    imageSrc:
-      "https://pbs.twimg.com/media/Fp2SmeuXsAEJJTY?format=jpg&name=large",
+    title: "Marketing Digital Estratégico para Negócios Online",
+    imageSrc: home07,
     imageAlt: "Home page from cellphone Store Site",
   },
 ];

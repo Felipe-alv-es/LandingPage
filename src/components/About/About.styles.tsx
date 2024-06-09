@@ -70,16 +70,16 @@ export const StyledTextArea = React.forwardRef<HTMLDivElement, AboutProps>(
 export const StyledImage = React.forwardRef<HTMLDivElement, AboutProps>(
   ({ scrollValue, ...props }, ref) => {
     const setImageValue = (scrollValue) => {
-      if (scrollValue < 2300) {
+      if (scrollValue < 2200) {
         return AboutOptions[0].imageSrc;
       }
-      if (scrollValue >= 2300 && scrollValue < 3200) {
+      if (scrollValue >= 2200 && scrollValue < 3250) {
         return AboutOptions[1].imageSrc;
       }
-      if (scrollValue >= 3200 && scrollValue < 4100) {
+      if (scrollValue >= 3250 && scrollValue < 4300) {
         return AboutOptions[2].imageSrc;
       }
-      if (scrollValue >= 4100) {
+      if (scrollValue >= 4300) {
         return AboutOptions[3].imageSrc;
       }
     };
@@ -112,7 +112,7 @@ export const StyledImage = React.forwardRef<HTMLDivElement, AboutProps>(
             backgroundSize: "cover",
             borderRadius: "16px",
             opacity:
-              scrollValue && (scrollValue < 980 || scrollValue > 5600)
+              scrollValue && (scrollValue < 980 || scrollValue > 5400)
                 ? 0
                 : 100,
           }}

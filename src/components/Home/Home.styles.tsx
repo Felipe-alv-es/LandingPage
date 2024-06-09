@@ -14,6 +14,8 @@ export const getContainerStyle = () => ({
     padding: "10% 10% 2% 10%",
     position: "relative",
   },
+  "> * .swiper-button-next": { marginTop: "-56px" },
+  "> * .swiper-button-prev": { marginTop: "-56px" },
 });
 
 export const getTitleStyle = () => ({
@@ -27,7 +29,7 @@ export const getTitleStyle = () => ({
 
 export const getSubtitleStyle = (mt?: boolean) => ({
   whiteSpace: "pre-wrap",
-  marginBottom: "16px",
+  marginBottom: "32px",
   typography: "h6",
   fontFamily: "kanit",
   fontWeight: "300",

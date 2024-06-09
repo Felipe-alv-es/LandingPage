@@ -1,6 +1,6 @@
 import React from "react";
 import { Typography, Box, Button } from "@mui/material";
-import { FcMindMap, FcLineChart, FcPositiveDynamic } from "react-icons/fc";
+import { FcMindMap, FcDiploma1, FcGraduationCap } from "react-icons/fc";
 import {
   StyledTextArea,
   getContainerStyle,
@@ -13,29 +13,26 @@ const Benefits = () => {
     <Box sx={getContainerStyle}>
       <Box>
         <Typography sx={getPageTitleStyle}>
-          {"Crie, divulgue e Gerencie \n seus serviços aqui "}
+          {"Descubra os Benefícios dos \nNossos Cursos Online"}
         </Typography>
         <Button variant="contained" sx={getButtonStyle}>
-          Comece agora - É grátis
+          Comece agora
         </Button>
         <Box sx={{ display: "flex" }}>
           <StyledTextArea
-            title="Desenvolva seus produtos rapidamente"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            title="Aprenda com Projetos Reais"
+            text="Adquira experiência prática desenvolvendo projetos reais durante os cursos. Nossos currículos são projetados para simular situações do mundo real, permitindo que você aplique os conceitos aprendidos diretamente em desafios práticos. Dessa forma, você estará melhor preparado para enfrentar os desafios do mercado de trabalho."
             icon={<FcMindMap />}
           />
           <StyledTextArea
-            title="Desenvolva seus produtos rapidamente"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            icon={<FcLineChart />}
+            title="Certificação Profissional"
+            text="Receba certificados reconhecidos pelo mercado ao concluir nossos cursos. Cada certificação valida suas habilidades e conhecimentos, aumentando sua credibilidade profissional e destacando seu currículo para potenciais empregadores e clientes."
+            icon={<FcDiploma1 />}
           />
           <StyledTextArea
-            title="Desenvolva seus produtos rapidamente"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            icon={<FcPositiveDynamic />}
+            title="Acesso Vitalício aos Conteúdos"
+            text="Tenha acesso vitalício aos materiais dos cursos que você concluir. Com essa vantagem, você pode revisitar os conteúdos sempre que precisar, garantindo que seu conhecimento permaneça atualizado e permitindo que você revise informações importantes sempre que desejar."
+            icon={<FcGraduationCap />}
           />
         </Box>
       </Box>

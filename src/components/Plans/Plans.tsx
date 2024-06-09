@@ -18,53 +18,63 @@ const Plans = () => {
         <Box sx={{ width: "32%" }}>
           <Typography sx={getPageCategoryStyle}>Preços</Typography>
           <Typography sx={getPageTitleStyle}>
-            {"Crie, divulgue e Gerencie \nseus serviços \naqui "}
+            {"Escolha a Melhor Opção para Você"}
           </Typography>
         </Box>
         <Paper sx={getPaperStyle}>
           <Typography sx={getPlanNameStyle}>Plano Basico</Typography>
-          <Typography sx={getPlanPriceStyle}>{"R$32/mes"}</Typography>
-          <Typography sx={{ fontSize: "12px" }}>
+          <Typography sx={getPlanPriceStyle}>{"R$49,90/mes"}</Typography>
+          <Typography sx={{ fontSize: "12px", marginBottom: "16px" }}>
             Descontos para planos anuais
           </Typography>
           <Typography sx={getPlanDescripStyle}>
-            Destinado para desenvolvedores Solo ou times pequenos
+            O plano ideal para quem está começando sua jornada de aprendizado.
+            Obtenha acesso a conteúdos essenciais e desenvolva suas habilidades
+            fundamentais em design, programação e fotografia
           </Typography>
           <Divider />
-          <Typography>Até 3 pessoas em sua equipe</Typography>
+          <Typography>Acesso a todos os cursos básicos</Typography>
           <Divider />
-          <Typography>Registro de domínio</Typography>
+          <Typography>Certificados de conclusão</Typography>
           <Divider />
-          <Typography>Acesso completo ao RPD</Typography>
+          <Typography>Suporte via e-mail</Typography>
           <Divider />
-          <Typography>Acesso gratis ao "Client Workspace"</Typography>
+          <Typography>
+            Acesso vitalício aos materiais dos cursos concluídos
+          </Typography>
           <Divider />
-          <Typography>Permissões basicas aos usuários</Typography>
+          <Typography>Comunidade de alunos</Typography>
           <Button variant="contained" sx={getButtonStyle}>
-            Comece agora - É grátis
+            Comece agora
           </Button>
         </Paper>
         <Paper sx={getPaperStyle}>
           <Typography sx={getPlanNameStyle}>Plano Premium</Typography>
-          <Typography sx={getPlanPriceStyle}>{"R$64/mes"}</Typography>
-          <Typography sx={{ fontSize: "12px" }}>
+          <Typography sx={getPlanPriceStyle}>{"R$99,90/mes"}</Typography>
+          <Typography sx={{ fontSize: "12px", marginBottom: "16px" }}>
             Descontos para planos anuais
           </Typography>
           <Typography sx={getPlanDescripStyle}>
-            Destinado para equipes de desenvolvedores e empresas
+            Para aqueles que desejam uma experiência de aprendizado mais
+            completa e imersiva. Aprofunde seus conhecimentos com conteúdos
+            avançados e benefícios exclusivos.
           </Typography>
           <Divider />
-          <Typography>Até 15 pessoas em sua equipe</Typography>
+          <Typography>
+            Acesso a todos os cursos (básicos e avançados)
+          </Typography>
           <Divider />
-          <Typography>Registro de domínio</Typography>
+          <Typography>Mentoria personalizada com instrutores</Typography>
           <Divider />
-          <Typography>Acesso completo ao RPD</Typography>
+          <Typography>Suporte prioritário via e-mail e chat ao vivo</Typography>
           <Divider />
-          <Typography>Acesso gratis ao "Enterprise Workspace"</Typography>
+          <Typography>
+            Participação em webinars, workshops e sessões ao vivo
+          </Typography>
           <Divider />
-          <Typography>Permissões total aos usuários</Typography>
+          <Typography>Acesso a projetos práticos e estudos de caso</Typography>
           <Button variant="contained" sx={getButtonStyle}>
-            Comece agora - É grátis
+            Comece agora
           </Button>
         </Paper>
       </Box>
