@@ -14,6 +14,7 @@ export const getContainerStyle = () => ({
     },
     "@media(max-width: 1440px)": {
       width: "80%",
+      padding: "10% 0% 10% 0%",
     },
   },
 });
@@ -37,6 +38,17 @@ export const getTitlePageStyle = () => ({
     fontWeight: "300",
     fontFamily: "kanit",
   },
+  "@media(max-width: 1440px)": {
+    width: "80%",
+  },
+  "@media(max-width: 950px)": {
+    width: "90%",
+    "> p:nth-of-type(1)": {
+      typography: "h3",
+      fontWeight: "500",
+      fontFamily: "kanit",
+    },
+  },
 });
 
 export const StyledTextArea = React.forwardRef<HTMLDivElement, AboutProps>(
@@ -47,6 +59,9 @@ export const StyledTextArea = React.forwardRef<HTMLDivElement, AboutProps>(
           width: "50%",
           marginBottom: "50%",
           paddingRight: "48px",
+          "@media(max-width: 950px)": {
+            paddingRight: "28px",
+          },
         }}
         {...props}
       >

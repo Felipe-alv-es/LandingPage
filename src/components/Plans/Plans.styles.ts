@@ -8,6 +8,11 @@ export const getContainerStyle = () => ({
     display: "flex",
     justifyContent: "space-between",
   },
+  "@media(max-width: 1440px)": {
+    "> div": {
+      width: "80%",
+    },
+  },
 });
 
 export const getPaperStyle = () => ({

@@ -91,6 +91,9 @@ const Home = () => {
                   width: "50px",
                   height: "50px",
                   "> svg": { width: "50px", height: "50px" },
+                  "@media(max-width: 950px)": {
+                    "> svg": { width: "40px", height: "40px" },
+                  },
                 }}
               >
                 {item.imageSrc}

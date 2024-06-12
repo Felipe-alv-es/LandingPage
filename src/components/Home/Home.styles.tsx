@@ -14,7 +14,7 @@ export const getContainerStyle = () => ({
     padding: "10% 10% 2% 10%",
     position: "relative",
     "@media(max-width: 1440px)": {
-      width: "80%",
+      width: "85%",
       padding: "10% 5% 2% 5%",
     },
   },
@@ -29,6 +29,11 @@ export const getTitleStyle = () => ({
   fontFamily: "kanit",
   fontWeight: "500",
   color: "white",
+  "@media(max-width: 950px)": {
+    typography: "h3",
+    fontFamily: "kanit",
+    fontWeight: "500",
+  },
 });
 
 export const getSubtitleStyle = (mt?: boolean) => ({

@@ -7,8 +7,12 @@ export const getContainerStyle = () => ({
   display: "flex",
   marginBottom: "32px",
   "> div": {
-    // background: "coral",
     width: "70%",
+  },
+  "@media(max-width: 1440px)": {
+    "> div": {
+      width: "80%",
+    },
   },
 });
 
@@ -58,7 +62,13 @@ export const StyledTextArea = React.forwardRef<HTMLDivElement, BenefitsProps>(
           fontFamily={"kanit"}
           fontWeight={"300"}
           color={"#383838"}
-          sx={{ whiteSpace: "pre-wrap", marginBottom: "16px" }}
+          sx={{
+            whiteSpace: "pre-wrap",
+            marginBottom: "16px",
+            "@media(max-width: 950px)": {
+              fontSize: "18px",
+            },
+          }}
         >
           {text}
         </Typography>

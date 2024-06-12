@@ -64,3 +64,24 @@ export const getButtonStyle = () => ({
   margin: "8px 4px 8px 4px",
   textTransform: "none",
 });
+
+export const getDrawerMenuStyle = () => ({
+  zIndex: 1,
+  "> div > div > ul": {
+    paddingTop: "64px",
+    listStyle: "none",
+    paddingBottom: "128px",
+    "> div": {
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "space-between",
+      padding: "16px",
+      "> li": {
+        fontSize: "16px",
+        fontFamily: "kanit",
+        marginRight: "20px",
+        fontWeight: "300",
+      },
+    },
+  },
+});
