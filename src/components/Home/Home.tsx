@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Box, Button, Icon, Typography } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { homeOptions } from "../../assets/utils/homeOptions.tsx";
@@ -13,11 +13,26 @@ import {
 } from "./Home.styles.tsx";
 
 const Home = () => {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  function handleWindowSizeChange() {
+    setWidth(window.innerWidth);
+  }
+
+  React.useEffect(() => {
+    window.addEventListener("resize", handleWindowSizeChange);
+    return () => {
+      window.removeEventListener("resize", handleWindowSizeChange);
+    };
+  }, []);
+
+  const isCellphone = width <= 390;
+
   const params = {
-    effect: "coverflow",
+    effect: isCellphone ? "" : "coverflow",
     centeredSlides: true,
     loop: true,
-    slidesPerView: 3,
+    slidesPerView: isCellphone ? 1 : 3,
     navigation: true,
     coverflowEffect: {
       rotate: 50,
@@ -73,6 +88,11 @@ const Home = () => {
                   fontFamily: "kanit",
                   fontWeight: "600",
                   color: "white",
+                  "@media(max-width: 390px)": {
+                    typography: "h6",
+                    fontFamily: "kanit",
+                    fontWeight: "600",
+                  },
                 }}
               >
                 {item.title}

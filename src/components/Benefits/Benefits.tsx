@@ -18,7 +18,14 @@ const Benefits = () => {
         <Button variant="contained" sx={getButtonStyle}>
           Comece agora
         </Button>
-        <Box sx={{ display: "flex" }}>
+        <Box
+          sx={{
+            display: "flex",
+            "@media(max-width: 390px)": {
+              display: "block",
+            },
+          }}
+        >
           <StyledTextArea
             title="Aprenda com Projetos Reais"
             text="Adquira experiência prática desenvolvendo projetos reais durante os cursos. Nossos currículos são projetados para simular situações do mundo real, permitindo que você aplique os conceitos aprendidos diretamente em desafios práticos. Dessa forma, você estará melhor preparado para enfrentar os desafios do mercado de trabalho."

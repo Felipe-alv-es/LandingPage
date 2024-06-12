@@ -17,6 +17,9 @@ export const getContainerStyle = () => ({
       width: "85%",
       padding: "10% 5% 2% 5%",
     },
+    "@media(max-width: 950px)": {
+      padding: "72px 5% 2% 5%",
+    },
   },
   "> * .swiper-button-next": { marginTop: "-56px" },
   "> * .swiper-button-prev": { marginTop: "-56px" },
@@ -34,6 +37,11 @@ export const getTitleStyle = () => ({
     fontFamily: "kanit",
     fontWeight: "500",
   },
+  "@media(max-width: 390px)": {
+    typography: "h4",
+    fontFamily: "kanit",
+    fontWeight: "500",
+  },
 });
 
 export const getSubtitleStyle = (mt?: boolean) => ({
@@ -44,6 +52,12 @@ export const getSubtitleStyle = (mt?: boolean) => ({
   fontWeight: "300",
   color: "white",
   marginTop: mt ? "72px" : "",
+  "@media(max-width: 390px)": {
+    fontSize: "16px",
+    fontFamily: "kanit",
+    fontWeight: "300",
+    marginTop: mt ? "32px" : "",
+  },
 });
 
 export const getButtonStyle = () => ({

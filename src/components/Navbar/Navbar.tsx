@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Box, Button, Divider, Drawer, IconButton } from "@mui/material";
 //@ts-ignore
 import logo from "../../assets/images/FelitLogo.png";
+import smLogo from "../../assets/images/LogoSM.png";
 import { HiMiniChevronDown } from "react-icons/hi2";
 import {
   getContainerStyle,
@@ -66,9 +67,11 @@ const Navbar = () => {
             >
               <Box
                 component="img"
-                src={logo}
+                src={width <= 390 ? smLogo : logo}
                 alt="Enterprise Logo Image"
-                sx={{ marginRight: "16px" }}
+                sx={{
+                  marginRight: "16px",
+                }}
               />
             </Box>
             <Box sx={{ display: "flex" }}>

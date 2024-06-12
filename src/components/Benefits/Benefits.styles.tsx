@@ -14,6 +14,13 @@ export const getContainerStyle = () => ({
       width: "80%",
     },
   },
+  "@media(max-width: 390px)": {
+    "> div": {
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center",
+    },
+  },
 });
 
 export const getPageTitleStyle = () => ({
@@ -23,6 +30,12 @@ export const getPageTitleStyle = () => ({
   fontFamily: "kanit",
   fontWeight: "500",
   color: "#383838",
+  "@media(max-width: 390px)": {
+    typography: "h4",
+    fontFamily: "kanit",
+    fontWeight: "500",
+    textAlign: "center",
+  },
 });
 
 export const getButtonStyle = () => ({
@@ -39,6 +52,10 @@ export const StyledTextArea = React.forwardRef<HTMLDivElement, BenefitsProps>(
           padding: "16px",
           width: "33%",
           "> svg": { height: "72px", width: "72px" },
+          "@media(max-width: 390px)": {
+            width: "100%",
+            textAlign: "center",
+          },
         }}
         {...props}
       >
