@@ -48,6 +48,10 @@ export const getListStyle = (): SxProps => ({
       textDecoration: "none",
       color: "white",
       cursor: "pointer",
+      "@media(max-width: 428px)": {
+        textAlign: "center",
+      },
+
       "> *": {
         textDecoration: "none",
         color: "white",
@@ -63,4 +67,7 @@ export const getlistTitleStyle = (): SxProps => ({
   fontWeight: "bold",
   marginBottom: "16px",
   padding: "32px 0px 0px 0px",
+  "@media(max-width: 428px)": {
+    textAlign: "center",
+  },
 });
