@@ -21,7 +21,7 @@ const Benefits = () => {
         <Box
           sx={{
             display: "flex",
-            "@media(max-width: 390px)": {
+            "@media(max-width: 428px)": {
               display: "block",
             },
           }}

@@ -13,7 +13,7 @@ export const getContainerStyle = () => ({
       width: "80%",
     },
   },
-  "@media(max-width: 390px)": {
+  "@media(max-width: 428px)": {
     "> div": {
       display: "block",
     },
@@ -34,7 +34,7 @@ export const getPaperStyle = () => ({
     {
       fontSize: "14px",
     },
-  "@media(max-width: 390px)": {
+  "@media(max-width: 428px)": {
     width: "100%",
     marginBottom: "16px",
   },
@@ -85,7 +85,7 @@ export const getPageTitleStyle = () => ({
   fontFamily: "kanit",
   fontWeight: "500",
   color: "#383838",
-  "@media(max-width: 390px)": {
+  "@media(max-width: 428px)": {
     typography: "h4",
     fontFamily: "kanit",
     fontWeight: "500",

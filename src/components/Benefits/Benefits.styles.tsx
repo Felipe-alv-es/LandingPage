@@ -14,7 +14,7 @@ export const getContainerStyle = () => ({
       width: "80%",
     },
   },
-  "@media(max-width: 390px)": {
+  "@media(max-width: 428px)": {
     "> div": {
       display: "flex",
       flexDirection: "column",
@@ -30,7 +30,7 @@ export const getPageTitleStyle = () => ({
   fontFamily: "kanit",
   fontWeight: "500",
   color: "#383838",
-  "@media(max-width: 390px)": {
+  "@media(max-width: 428px)": {
     typography: "h4",
     fontFamily: "kanit",
     fontWeight: "500",
@@ -52,7 +52,7 @@ export const StyledTextArea = React.forwardRef<HTMLDivElement, BenefitsProps>(
           padding: "16px",
           width: "33%",
           "> svg": { height: "72px", width: "72px" },
-          "@media(max-width: 390px)": {
+          "@media(max-width: 428px)": {
             width: "100%",
             textAlign: "center",
           },
