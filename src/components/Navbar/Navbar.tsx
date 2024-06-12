@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Box, Button, Divider, Drawer, IconButton } from "@mui/material";
 //@ts-ignore
 import logo from "../../assets/images/FelitLogo.png";
+//@ts-ignore
 import smLogo from "../../assets/images/LogoSM.png";
 import { HiMiniChevronDown } from "react-icons/hi2";
 import {

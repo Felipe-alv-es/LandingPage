@@ -16,6 +16,9 @@ export const getContainerStyle = () => ({
     "@media(max-width: 1440px)": {
       width: "80%",
     },
+    "@media(max-width: 1360px)": {
+      width: "85%",
+    },
   },
 });
 
