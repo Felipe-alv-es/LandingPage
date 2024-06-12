@@ -89,5 +89,6 @@ export const getPageTitleStyle = () => ({
     typography: "h4",
     fontFamily: "kanit",
     fontWeight: "500",
+    textAlign: "center",
   },
 });

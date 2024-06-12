@@ -64,7 +64,7 @@ export const getSecondMenuStyle = () => ({
 });
 
 export const getButtonStyle = () => ({
-  margin: "8px 4px 8px 4px",
+  margin: "8px 8px 8px 8px",
   textTransform: "none",
 });
 
