@@ -26,7 +26,7 @@ const Home = () => {
     };
   }, []);
 
-  const isCellphone = width <= 390;
+  const isCellphone = width <= 428;
 
   const params = {
     effect: isCellphone ? "" : "coverflow",

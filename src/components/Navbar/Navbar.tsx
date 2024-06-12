@@ -67,7 +67,7 @@ const Navbar = () => {
             >
               <Box
                 component="img"
-                src={width <= 390 ? smLogo : logo}
+                src={width <= 428 ? smLogo : logo}
                 alt="Enterprise Logo Image"
                 sx={{
                   marginRight: "16px",

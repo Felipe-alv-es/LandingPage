@@ -18,7 +18,7 @@ const Plans = () => {
         <Box
           sx={{
             width: "32%",
-            "@media(max-width: 390px)": {
+            "@media(max-width: 428px)": {
               width: "100%",
             },
           }}

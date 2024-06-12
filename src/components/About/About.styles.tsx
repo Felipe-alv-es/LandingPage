@@ -49,7 +49,7 @@ export const getTitlePageStyle = () => ({
       fontFamily: "kanit",
     },
   },
-  "@media(max-width: 390px)": {
+  "@media(max-width: 428px)": {
     width: "100%",
     "> p:nth-of-type(1)": {
       typography: "h4",
@@ -77,7 +77,7 @@ export const StyledTextArea = React.forwardRef<HTMLDivElement, AboutProps>(
           "@media(max-width: 950px)": {
             paddingRight: "28px",
           },
-          "@media(max-width: 390px)": {
+          "@media(max-width: 428px)": {
             width: "100%",
             marginBottom: "20%",
             paddingRight: "0px",
@@ -93,7 +93,7 @@ export const StyledTextArea = React.forwardRef<HTMLDivElement, AboutProps>(
           sx={{
             whiteSpace: "pre-wrap",
             marginBottom: "16px",
-            "@media(max-width: 390px)": {
+            "@media(max-width: 428px)": {
               typography: "h4",
               fontFamily: "kanit",
               fontWeight: "500",
@@ -111,7 +111,7 @@ export const StyledTextArea = React.forwardRef<HTMLDivElement, AboutProps>(
           sx={{
             whiteSpace: "pre-wrap",
             marginBottom: "16px",
-            "@media(max-width: 390px)": {
+            "@media(max-width: 428px)": {
               fontSize: "16px",
               fontWeight: "300",
               fontFamily: "kanit",
@@ -154,7 +154,7 @@ export const StyledImage = React.forwardRef<HTMLDivElement, AboutProps>(
           "@media(max-width: 1360px)": {
             top: 200,
           },
-          "@media(max-width: 390px)": {
+          "@media(max-width: 428px)": {
             display: "none",
           },
         }}
