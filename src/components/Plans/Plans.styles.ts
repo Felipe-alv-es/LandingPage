@@ -8,6 +8,16 @@ export const getContainerStyle = () => ({
     display: "flex",
     justifyContent: "space-between",
   },
+  "@media(max-width: 1440px)": {
+    "> div": {
+      width: "80%",
+    },
+  },
+  "@media(max-width: 390px)": {
+    "> div": {
+      display: "block",
+    },
+  },
 });
 
 export const getPaperStyle = () => ({
@@ -24,6 +34,10 @@ export const getPaperStyle = () => ({
     {
       fontSize: "14px",
     },
+  "@media(max-width: 390px)": {
+    width: "100%",
+    marginBottom: "16px",
+  },
 });
 
 export const getPlanNameStyle = () => ({
@@ -71,4 +85,9 @@ export const getPageTitleStyle = () => ({
   fontFamily: "kanit",
   fontWeight: "500",
   color: "#383838",
+  "@media(max-width: 390px)": {
+    typography: "h4",
+    fontFamily: "kanit",
+    fontWeight: "500",
+  },
 });

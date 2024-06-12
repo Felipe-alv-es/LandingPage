@@ -8,7 +8,14 @@ export const getContainerStyle = () => ({
   display: "flex",
   "> div": {
     padding: "10%",
-    width: "85%",
+    width: "70%",
+    "@media(max-width: 1920px)": {
+      padding: "10% 5% 10% 5%",
+    },
+    "@media(max-width: 1440px)": {
+      width: "80%",
+      padding: "10% 0% 10% 0%",
+    },
   },
 });
 
@@ -31,6 +38,32 @@ export const getTitlePageStyle = () => ({
     fontWeight: "300",
     fontFamily: "kanit",
   },
+  "@media(max-width: 1440px)": {
+    width: "80%",
+  },
+  "@media(max-width: 950px)": {
+    width: "90%",
+    "> p:nth-of-type(1)": {
+      typography: "h3",
+      fontWeight: "500",
+      fontFamily: "kanit",
+    },
+  },
+  "@media(max-width: 390px)": {
+    width: "100%",
+    "> p:nth-of-type(1)": {
+      typography: "h4",
+      fontWeight: "500",
+      fontFamily: "kanit",
+      textAlign: "center",
+    },
+    "> p:nth-of-type(2)": {
+      fontSize: "16px",
+      fontWeight: "300",
+      fontFamily: "kanit",
+      textAlign: "center",
+    },
+  },
 });
 
 export const StyledTextArea = React.forwardRef<HTMLDivElement, AboutProps>(
@@ -41,6 +74,14 @@ export const StyledTextArea = React.forwardRef<HTMLDivElement, AboutProps>(
           width: "50%",
           marginBottom: "50%",
           paddingRight: "48px",
+          "@media(max-width: 950px)": {
+            paddingRight: "28px",
+          },
+          "@media(max-width: 390px)": {
+            width: "100%",
+            marginBottom: "20%",
+            paddingRight: "0px",
+          },
         }}
         {...props}
       >
@@ -49,7 +90,16 @@ export const StyledTextArea = React.forwardRef<HTMLDivElement, AboutProps>(
           fontFamily={"kanit"}
           fontWeight={"500"}
           color={"#383838"}
-          sx={{ whiteSpace: "pre-wrap", marginBottom: "16px" }}
+          sx={{
+            whiteSpace: "pre-wrap",
+            marginBottom: "16px",
+            "@media(max-width: 390px)": {
+              typography: "h4",
+              fontFamily: "kanit",
+              fontWeight: "500",
+              textAlign: "center",
+            },
+          }}
         >
           {title}
         </Typography>
@@ -58,7 +108,16 @@ export const StyledTextArea = React.forwardRef<HTMLDivElement, AboutProps>(
           fontFamily={"kanit"}
           fontWeight={"300"}
           color={"#383838"}
-          sx={{ whiteSpace: "pre-wrap", marginBottom: "16px" }}
+          sx={{
+            whiteSpace: "pre-wrap",
+            marginBottom: "16px",
+            "@media(max-width: 390px)": {
+              fontSize: "16px",
+              fontWeight: "300",
+              fontFamily: "kanit",
+              textAlign: "center",
+            },
+          }}
         >
           {text}
         </Typography>
@@ -92,6 +151,9 @@ export const StyledImage = React.forwardRef<HTMLDivElement, AboutProps>(
           width: "100%",
           paddingTop: "0%",
           display: "flex",
+          "@media(max-width: 390px)": {
+            display: "none",
+          },
         }}
         {...props}
       >

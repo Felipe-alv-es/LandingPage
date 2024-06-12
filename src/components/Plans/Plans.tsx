@@ -15,7 +15,14 @@ const Plans = () => {
   return (
     <Box sx={getContainerStyle}>
       <Box>
-        <Box sx={{ width: "32%" }}>
+        <Box
+          sx={{
+            width: "32%",
+            "@media(max-width: 390px)": {
+              width: "100%",
+            },
+          }}
+        >
           <Typography sx={getPageCategoryStyle}>Preços</Typography>
           <Typography sx={getPageTitleStyle}>
             {"Escolha a Melhor Opção para Você"}

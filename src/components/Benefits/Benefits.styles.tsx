@@ -9,6 +9,18 @@ export const getContainerStyle = () => ({
   "> div": {
     width: "70%",
   },
+  "@media(max-width: 1440px)": {
+    "> div": {
+      width: "80%",
+    },
+  },
+  "@media(max-width: 390px)": {
+    "> div": {
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center",
+    },
+  },
 });
 
 export const getPageTitleStyle = () => ({
@@ -18,6 +30,12 @@ export const getPageTitleStyle = () => ({
   fontFamily: "kanit",
   fontWeight: "500",
   color: "#383838",
+  "@media(max-width: 390px)": {
+    typography: "h4",
+    fontFamily: "kanit",
+    fontWeight: "500",
+    textAlign: "center",
+  },
 });
 
 export const getButtonStyle = () => ({
@@ -34,6 +52,10 @@ export const StyledTextArea = React.forwardRef<HTMLDivElement, BenefitsProps>(
           padding: "16px",
           width: "33%",
           "> svg": { height: "72px", width: "72px" },
+          "@media(max-width: 390px)": {
+            width: "100%",
+            textAlign: "center",
+          },
         }}
         {...props}
       >
@@ -57,7 +79,13 @@ export const StyledTextArea = React.forwardRef<HTMLDivElement, BenefitsProps>(
           fontFamily={"kanit"}
           fontWeight={"300"}
           color={"#383838"}
-          sx={{ whiteSpace: "pre-wrap", marginBottom: "16px" }}
+          sx={{
+            whiteSpace: "pre-wrap",
+            marginBottom: "16px",
+            "@media(max-width: 950px)": {
+              fontSize: "18px",
+            },
+          }}
         >
           {text}
         </Typography>
