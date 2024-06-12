@@ -151,6 +151,9 @@ export const StyledImage = React.forwardRef<HTMLDivElement, AboutProps>(
           width: "100%",
           paddingTop: "0%",
           display: "flex",
+          "@media(max-width: 1360px)": {
+            top: 200,
+          },
           "@media(max-width: 390px)": {
             display: "none",
           },
